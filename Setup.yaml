@@ -1,0 +1,39 @@
+---
+General:
+  DefaultPrefix: /
+  ReinitializeCommand: vb.reinit          #Implemented in V2.1.0
+  SaveGameName: Xango                     #Added in V2.1.0
+  BlockedChannels: [ "Public" ]           #Added in v2.2.13
+  #BlockedChannels: [ "Public", "Faction", "Alliance", "Private", "Server" ] Note: Case Sensitive
+VirtualBackpacks:
+  DeleteOnDeath: false                    #Implemented in v2.1.0
+  Commands:
+  - vb1
+  - vB2
+  - vb3
+  MinimumLevelRequired: 0                 #Implemented in V2.1.0
+  UsageCost: 0                            #Implemented in V2.1.0
+  SuperStack: true                        #Implemented in V2.1.0
+  MaxSuperStack: 1000000                  #Implemented in V2.2.0
+  RestrictedPlayfields:
+  - PvP Snow Planet                       #mod will not work in playfields in this list
+  - Playfield Name
+  RequireNearby:                          #This entire list has Not been Implemented yet
+  - Type: FactionBase
+    MaxRange: 50
+    EntityID: 
+  - Type: PlayerBase
+    MaxRange: 50
+    EntityID: 
+  - Type: AllyBase
+    MaxRange: 50
+    EntityID: 
+  - Type: SpecificPOI
+    MaxRange: 50
+    EntityID: 1234
+RestoreOnWipe:
+  VirtualBackpack: true                  #Not Yet Implemented
+  Backpack: false                        #Not Yet Implemented
+  Toolbar: false                         #Not Yet Implemented
+  Credits: false                         #Not Yet Implemented
+  FactoryResources: false                #Not Yet Implemented
